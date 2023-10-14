@@ -34,9 +34,9 @@ docker exec -it symfony-app bash -c "bin/console app:seed-database"
 docker exec -it symfony-app bash -c "bin/console app:get-task-list"
 ```
 
-Uygulama şimdi http://localhost/ adresinden erişilebilir olmalıdır.
+### Uygulama artık http://localhost/ adresinden erişilebilir olacaktır.
 
-### Developerların Toplam Çalışma süreleri:
+### Developerların toplam çalışma süreleri:
 
 Developer1: 188
 
