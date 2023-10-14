@@ -37,10 +37,15 @@ docker exec -it symfony-app bash -c "bin/console app:get-task-list"
 Uygulama şimdi http://localhost/ adresinden erişilebilir olmalıdır.
 
 Developerların Toplam Çalışma süreleri:
+
 Developer1: 188
+
 Developer2: 203
+
 Developer3: 187
+
 Developer4: 191
+
 Developer5: 187
 
 
