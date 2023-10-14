@@ -6,7 +6,7 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 
 ### 1) Projeyi bilgisayarınıza klonlayın:
 ```
-git clone https://github.com/yasincetintas/symfony-messenger.git
+git clone https://github.com/lnsyder/task-management.git
 cd task-management
 ```
 ### 2) Docker konteynerlarını ayağa kaldırın:
