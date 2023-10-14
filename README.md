@@ -25,7 +25,11 @@ DATABASE_URL=postgresql://user:password@postgres:5432/postgres?charset=utf8
 ### 5) Veritabanını oluşturun ve gerekli verileri seeder'dan import edin:
 ```
 docker exec -it symfony-app bash -c "bin/console make:migration"
+```
+```
 docker exec -it symfony-app bash -c "bin/console doctrine:migrations:migrate"
+```
+```
 docker exec -it symfony-app bash -c "bin/console app:seed-database"
 ```
 
