@@ -1,0 +1,55 @@
+App\Entity\TblTask:
+  type: entity
+  table: tbl_task
+  repositoryClass: App\Repository\TblTaskRepository
+  id:
+    taskId:
+      type: integer
+      nullable: false
+      options:
+        unsigned: false
+      id: true
+      column: task_id
+      generator:
+        strategy: SEQUENCE
+  fields:
+    taskName:
+      type: string
+      nullable: false
+      length: 255
+      options:
+        fixed: false
+      column: task_name
+    estimatedDuration:
+      type: integer
+      nullable: false
+      column: estimated_duration
+    employeeEstimatedDuration:
+      type: integer
+      nullable: false
+      column: employee_estimated_duration
+    taskWeek:
+      type: string
+      nullable: false
+      length: 255
+      options:
+        fixed: false
+      column: task_week
+  manyToOne:
+    provider:
+      targetEntity: LkpProvider
+      cascade: { }
+      fetch: LAZY
+      joinColumns:
+        provider_id:
+          referencedColumnName: provider_id
+      orphanRemoval: false
+    employee:
+      targetEntity: TblEmployee
+      cascade: { }
+      fetch: LAZY
+      joinColumns:
+        employee_id:
+          referencedColumnName: employee_id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

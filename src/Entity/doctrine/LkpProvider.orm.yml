@@ -1,0 +1,39 @@
+App\Entity\LkpProvider:
+  type: entity
+  table: lkp_provider
+  repositoryClass: App\Repository\LkpProviderRepository
+  id:
+    providerId:
+      type: integer
+      nullable: false
+      options:
+        unsigned: false
+      id: true
+      column: provider_id
+      generator:
+        strategy: SEQUENCE
+  fields:
+    kindId:
+      type: integer
+      nullable: false
+      column: kind_id
+    name:
+      type: string
+      nullable: false
+      length: 255
+      options:
+        fixed: false
+      column: name
+    method:
+      type: string
+      nullable: false
+      length: 255
+      options:
+        fixed: false
+      column: method
+    credentials:
+      type: json
+      nullable: false
+      length: 255
+      column: credentials
+  lifecycleCallbacks: {  }
