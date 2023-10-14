@@ -72,7 +72,7 @@ class SeedDatabaseCommand extends Command
             'Completed At:' . date('d-m-Y H:i:s'),
             '',
         ]);
-        return Command::SUCCESS;
+        return true;
     }
 
 

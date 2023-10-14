@@ -56,6 +56,6 @@ class GetTaskListCommand extends Command
             'Completed At:' . date('d-m-Y H:i:s'),// Start
             '',
         ]);
-        return Command::SUCCESS;
+        return true;
     }
 }
